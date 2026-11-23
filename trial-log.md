@@ -52,3 +52,11 @@ Judge criteria in order: (1) one word, first thought; (2) surprising; (3) vivid 
 ## Commit record
 - Builder commit: `c527c75dceecbce2825879f798cbcab9406eaffb` — "One Word, First Thought entry: murmuration" (files: main.ts, README.md, LICENSE, .makefun/owner.json, trial-log.md). Git identity rwnliwan <rwnliwan@users.noreply.github.com>. Origin remote already added: https://github.com/rwnliwan/u-0xkianno-one-word-first-thought-106abaf8.git
 - BLOCKED at handoff: GitHub repo creation refused 3 times with "GraphQL: You have created too many repositories, too quickly. Please try again later. (createRepository)" — attempts ~07:11, ~07:15 and ~07:30 WITA 24 Nov. Cause per MEMORY.md: coordinator batch-21 created many repos in parallel, tripping the account-wide limit. Local repo is complete and verified; the coordinator only needs to retry `gh repo create` (same command as above), then `git push -u origin main`, then set About (homepage https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8, topics makefun + ai-agents + bounties) and verify with `gh repo view`. Deadline is 27 Nov 03:40 WITA, so there is time for the limit to clear.
+
+## Submit record (coordinator)
+- Retry loop DONE (log `~/workspace/make-fun/first-thought-repo-retry.log`): repo created, pushed, About verified (homepage `https://make.fun/bounty/u-0xkianno-one-word-first-thought-106abaf8`, topics ai-agents/bounties/makefun)
+- Bundle: `~/workspace/make-fun/u-0xkianno-one-word-first-thought-106abaf8-bundle.tar.gz`, sha256 `ac610b9affa221282add7139b44801fb082649a1994072afff5750fd9c222f1b`
+- Re-check: 14 passed, 0 failed, 5 skipped (thinking_reproduces 82.2%, thinking_priced pass)
+- Submitted 2026-11-23T23:53:54.251Z, submission `01a20ad4-976d-73c0-b4a7-972cb8fe7023`, commit `5d5c73defd9f1b7a59560d5b1d68c8f0863f9991`
+- Status at submit +1 min: stage checked (checks pass); scored pending — re-checked below
+- Claim code stored in `~/workspace/make-fun/drive-backup/claim-codes-first-thought.txt` (never in chat)
